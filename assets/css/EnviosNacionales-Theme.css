@@ -1,0 +1,76 @@
+@import '../css/intlTelInput.css';
+.login-bg-img{
+    background-image: url('../img/login.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pointer-on{
+    cursor: pointer;
+}
+.cursor-help{
+    cursor: help;
+}
+.icon-danger:hover{
+    color: #e85347;
+}
+.icon-info:hover{
+    color: #09c2de;
+}
+
+.buttons-excel:before{
+    color: green;
+}
+.no-show{
+    display: none;
+}
+.input-totali{
+
+}
+.input-totali input, .input-totali input:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: default;
+    padding: 0px 0px 0px 0px;
+    text-align: end;
+}
+@media (max-width: 768px){
+    .invoice-bills .table {
+        min-width: 220px;
+    }
+}
+.invoice-bills .table {
+    min-width: 0px;
+}
+
+.swal2-content input::placeholder{
+    color: #ababab;
+}
+.bg-primary-edn{
+    background-color: #071e61;
+}
+.w-11{
+    width: 12% !important
+}
+#ventasdiarias-items .item-loader{
+    width: 15px;
+    height: 17px;
+    animation: item-loader 1s linear infinite alternate;
+    border-radius: 19px;
+}
+
+@keyframes item-loader {
+    0%{
+        background-color: #d7d7d7cf;
+    }100%{
+        background-color: #f7f7f7cf;
+    }
+}
+@media (min-width: 992px){
+    #ventasdiarias-items .tb-odr-id {
+        min-width: 100%;
+        max-width: 100%;
+        font-size: 11px;
+        cursor: pointer;
+    }
+}

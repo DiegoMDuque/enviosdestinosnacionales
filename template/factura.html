@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTUTA [FACTURA]</title>
+</head>
+<style>
+
+    /*Margen*/
+    *{
+     /* border: 1px solid #000;*/  
+    }
+    .mx-0 {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .mx-1 {
+        margin-right: 0.375rem !important;
+        margin-left: 0.375rem !important;
+    }
+
+    .mx-2 {
+        margin-right: 0.75rem !important;
+        margin-left: 0.75rem !important;
+    }
+
+    .mx-3 {
+        margin-right: 1rem !important;
+        margin-left: 1rem !important;
+    }
+
+    .mx-4 {
+        margin-right: 1.5rem !important;
+        margin-left: 1.5rem !important;
+    }
+
+    .mx-5 {
+        margin-right: 2.75rem !important;
+        margin-left: 2.75rem !important;
+    }
+
+    .mt-0 {
+        margin-top: 0 !important;
+    }
+
+    .mt-1 {
+        margin-top: 0.375rem !important;
+    }
+
+    .mt-2 {
+        margin-top: 0.75rem !important;
+    }
+
+    .mt-3 {
+        margin-top: 1rem !important;
+    }
+
+    .mt-4 {
+        margin-top: 1.5rem !important;
+    }
+
+    .mt-5 {
+        margin-top: 2.75rem !important;
+    }
+
+    .my-0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .my-1 {
+        margin-top: 0.375rem !important;
+        margin-bottom: 0.375rem !important;
+    }
+
+    .my-2 {
+        margin-top: 0.75rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .my-3 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .my-4 {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .my-5 {
+        margin-top: 2.75rem !important;
+        margin-bottom: 2.75rem !important;
+    }
+
+    .p-0 {
+        padding: 0 !important;
+    }
+
+    .p-1 {
+        padding: 0.375rem !important;
+    }
+
+    .p-2 {
+        padding: 0.75rem !important;
+    }
+
+    .p-3 {
+        padding: 1rem !important;
+    }
+
+    .p-4 {
+        padding: 1.5rem !important;
+    }
+
+    .p-5 {
+        padding: 2.75rem !important;
+    }
+
+    .px-0 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .px-1 {
+        padding-right: 0.375rem !important;
+        padding-left: 0.375rem !important;
+    }
+
+    .px-2 {
+        padding-right: 0.75rem !important;
+        padding-left: 0.75rem !important;
+    }
+
+    .px-3 {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .px-4 {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+
+    .px-5 {
+        padding-right: 2.75rem !important;
+        padding-left: 2.75rem !important;
+    }
+
+    .py-1 {
+        padding-top: 0.375rem !important;
+        padding-bottom: 0.375rem !important;
+    }
+
+    .py-2 {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    .py-3 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .py-4 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .py-5 {
+        padding-top: 2.75rem !important;
+        padding-bottom: 2.75rem !important;
+    }
+
+    table{
+        border: 1px solid;
+        border-spacing: 0px;
+        border-collapse: collapse;
+    }
+
+    .logo-header {
+        text-align: right;
+        width: 185px;
+    }
+
+    .header-list {
+        background-color: #071e61;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-left {
+        text-align: left !important;
+    }
+
+    .text-end {
+        text-align: right !important;
+    }
+
+    .text-white {
+        color: #fff !important;
+    }
+
+    .bg-gray {
+        background-color: #c3c3c3;
+    }
+    .bb{
+        border-bottom: 1px solid #000;
+    }
+
+    h6,
+    .h6,
+    h5,
+    .h5,
+    h4,
+    .h4,
+    h3,
+    .h3,
+    h2,
+    .h2,
+    h1,
+    .h1 {
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        font-family: Nunito, sans-serif;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-size: 10px;
+    }
+</style>
+
+<body id="factura">
+    <table style="border: 1px solid; width: 700px; height: auto; ">
+        <tbody>
+            <tr>
+                <td colspan="9" class="header-list"></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="p-1"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="text-center">
+                    <h3 class="title">Factura</h3>
+                </td>
+                <td colspan="2" class="text-center"></td>
+                <td rowspan="2" colspan="4" class=" text-end">
+                    <img class="logo-header pt-2 px-2" src="[LOGO]">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="text-center">
+                    <img class="text-center" style="width: 169px;" src="[BARCODE]" >
+                </td>
+            </tr>
+            <tr>
+                <td class="py-1" colspan="9"></td>
+            </tr>
+            <tr>
+                <td colspan="5" class="text-left px-2">Envíos Destinos nacionales</td>
+                <td colspan="2" class="text-left px-2">Remitente</td>
+                <td colspan="2" class="text-left px-2">Destinatario</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="text-left px-2">Yuly Paola Lancheros Gómez</td>
+                <td colspan="2" class="text-left px-2">[NAME_R]</td>
+                <td colspan="2" class="text-left px-2">[NAME_D]</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="text-left px-2">Nit 1128401355</td>
+                <td colspan="2" class="text-left px-2">[CEDULA_R]</td>
+                <td colspan="2" class="text-left px-2">[CEDULA_D]</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="text-left px-2">Pasaje comercial bodegas la 49</td>
+                <td colspan="2" class="text-left px-2">[PHONE_R]</td>
+                <td colspan="2" class="text-left px-2">[PHONE_D]</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="text-left px-2">contacto@enviosnacionales.com.co</td>
+                <td colspan="2" class="text-left px-2">[CITY_R]</td>
+                <td colspan="2" class="text-left px-2">[CITY_D]</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left px-2">+320 373 8547</td>
+                <td colspan="3" class="text-left px-2"></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="text-left py-1"></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="text-left bg-gray"></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="text-left py-1"></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="text-left px-2"><strong>NUMERO:	[ID]</strong></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="text-left px-2"><strong>FECHA:	[FECHA]</strong></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="text-left py-1"></td>
+            </tr>
+            <tr class="header-list">
+                <td colspan="7" class="text-left text-white px-2"><strong>Descripción</strong></td>
+                <td class="text-center text-white px-2">Cantidad / Valor</td>
+                <td class="text-center text-white px-2">Costo</td>
+
+            </tr>
+            <tr>
+                <td colspan="7" class="text-left bb px-2 py-1">[DESCRIPCION]</td>
+                <td class="text-center px-2 py-1"></td>
+                <td class="text-left px-2 py-1"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="text-left px-2 py-1">Envio</td>
+                <td class="text-center px-2 py-1">[PACK]</td>
+                <td class="text-left px-2 py-1">[ENVIO]</td>
+
+            </tr>
+            <tr>
+                <td colspan="7" class="text-left px-2 py-1">Valor Asegurado</td>
+                <td class="text-center px-2 py-1">[valor_declarado]</td>
+                <td class="text-left px-2 py-1">[MANEJO]</td>
+
+            </tr>
+            <tr>
+                <td colspan="7" class="text-left px-2 py-1">Servicios de compras</td>
+                <td class="text-center px-2 py-1">[SHOP_QS]</td>
+                <td class="text-left px-2 py-1">[SHOP]</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="text-left px-2 py-1">Servicios de recogida</td>
+                <td class="text-center px-2 py-1">[PICKUP_QS]</td>
+                <td class="text-left px-2 py-1">[PICKUP]</td>
+            </tr>
+            <tr>
+                <td colspan="9" class="text-left py-1"></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="text-left bg-gray"></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="text-left py-1"></td>
+            </tr>
+            
+            <tr>
+                <td colspan="7" class="text-left"></td>
+                <td colspan="1" class="text-left">Subtotal</td>
+                <td colspan="1" class="text-left">[SUBTOTAL]</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="text-left"></td>
+                <td colspan="1" class="text-left">Descuento</td>
+                <td colspan="1" class="text-left">[DESCUENTO]</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="text-left"></td>
+                <td colspan="1" class="text-left">RT Fuente</td>
+                <td colspan="1" class="text-left">[RTFUENTE]</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="text-left"></td>
+                <td colspan="1" class="text-left">IVA</td>
+                <td colspan="1" class="text-left">[IVA]</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="text-left"></td>
+                <td style="border-top: 1px solid;" colspan="1" class="text-left bo">Total</td>
+                <td style="border-top: 1px solid;"colspan="1" class="text-left"><strong>[TOTAL]</strong></td>
+            </tr>
+            <tr>
+                <td colspan="9" style="padding: 20px 20px; font-size: 8px; " >
+                    <li>Para reclamar encomiendas se exige el documento de identidad original con el que se completaron los datos de la encomienda, rechazamos cualquier otro tipo de identificacion o explicacion verbal.
+                    <li>El remitente está obligado a declarar contenido, valor y factura de sus encomiendas (no esconda dentro de las encomiendas prendas de valor, joyas y/o cosas prohibidas por las leyes colombianas como narcóticos, armas, municiones, explosivos, etc.).
+                    <li>Si a la encomienda no se le ha declarado contenido y valor y se pierde o sufre daño total se pagará $20.000 o en proporción si el daño es parcial.
+                    <li>La empresa no responde por encomiendas que hayan sido decomisadas por las autoridades así el remitente hubiera declarado valor.
+                    <li>Toda encomienda viaja por cuenta y riesgo del remitente, en ningún caso se recomienda indemnización por encomiendas susceptibles de dañarse durante el transcurso del viaje o a causa de demoras involuntarias así el remitente hubiera declarado valor. Para efectos legales entiéndase incorporado al presente contrato código de comercio, libro 4, capitulo 4 articulo 1008 y subsiguientes
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
